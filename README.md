@@ -11,7 +11,7 @@ part1:导航栏部分
 
 part2:产品介绍
 
-![](https://raw.githubusercontent.com/Blackmamba-xuan/DJI-/master/screenshoot/product.jpg)
+![](https://raw.githubusercontent.com/Blackmamba-xuan/DJI-/master/screenshoot/product.png)
 
 ![](https://raw.githubusercontent.com/Blackmamba-xuan/DJI-/master/screenshoot/product01.jpg)
 
