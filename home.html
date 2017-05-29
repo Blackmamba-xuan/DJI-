@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/nav_styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bt_styles.css">
+    <title>首页</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #view{
+            width: 100%;
+            height: 314px;
+            background: white;
+
+        }
+
+        #view #view_box_1{
+            margin-left: 0.55%;
+            margin-right: 0.55%;
+        }
+
+        #view #view_box_2{
+            /*background: salmon;*/
+        }
+
+        #view #view_box_3{
+            margin-left: 0.55%;
+            margin-right: 0.55%;
+        }
+
+        #view .view_box{
+            width: 32.6%;
+            height: 304px;
+            float: left;
+            margin-top: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #view .view_box:hover .view_box_img{
+            transform: scale(1.04);
+        }
+
+        #view .view_box .view_box_img{
+            width: 100%;
+            height: 304px;
+            transition: all 1s;
+        }
+
+        #view a{
+            position: relative;
+            display: block;
+        }
+
+        #view .view_box .text_wrap{
+            width: 100%;
+            height: 152px;
+            /*background: red;*/
+            position: absolute;
+            top: 152px;
+        }
+
+        #view .view_box .text_wrap .text{
+            width: 311px;
+            height: 56px;
+            /*background: cadetblue;*/
+            position: absolute;
+            top: 71px;
+            left: 30px;
+        }
+
+        #view .view_box .text_wrap .text .title{
+            color: white;
+            font-family: Gotham, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+            font-style: normal;
+
+            font-size: 16px;
+            display: block;
+            /*border-bottom-color: white;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;*/
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-align: left
+        }
+
+        #view .view_box .text_wrap .text .line{
+            width: 68px;
+            height: 1px;
+            background: white;
+        }
+
+        #view .view_box .text_wrap .text .main{
+            height: 16px;
+            /*background: red;*/
+            text-transform: uppercase;
+            font-size: 13px;
+            color: white;
+            text-align: left;
+            font-weight: 300;
+            margin-left: 1px;
+            margin-top: 10px;
+        }
+        .banner{
+            position: relative;
+            margin-bottom: -2px;
+            background: url("dajiang/home_banner1.jpg") ;
+            background-size: 100% 100%;
+            height: 650px;
+        }
+        .banner-box{
+            padding-left: 15px;
+        }
+        .banner-box-1{
+            padding-top: 230px;
+            margin:auto auto;
+            max-width: 1170px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            height: 100%;
+            box-sizing: border-box;
+            display:block;
+        }
+        .banner-box-1 h2{
+            font-family: "Gotham","Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif!important;
+        }
+        .banner-box-1 p{
+            color: #f7f8f9;
+            padding-bottom: 40px;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            font-weight: 300;
+            font-family: "Gotham","Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif!important;
+            text-align: center;
+        }
+        .banner-box-1 a{
+            text-decoration: none;
+            color: #f7f8f9;
+            text-align: center;
+            border-bottom: 2px solid #337ab7;
+            padding-bottom: 8px;
+        }
+        .banner-button-prev{
+            position: absolute;
+            width: 27px;
+            z-index: 10;
+            cursor: pointer;
+            height: 100%;
+            left:20px;
+            right:auto;
+            padding: 5px;
+            top: 0px;
+        }
+        .left-icon{
+            background: url("dajiang/right-white-icon.svg");
+            background-size: 100% 100%;
+            transform: rotate(180deg);
+            width: 25px;
+            height: 60px;
+            top: 50%;
+            position: absolute;
+            margin-top: -30px;
+        }
+        .banner-button-next{
+            position: absolute;
+            width: 27px;
+            z-index: 10;
+            cursor: pointer;
+            height: 100%;
+            right:20px;
+            padding: 5px;
+            top: 0px;
+        }
+        .right-icon{
+            background: url("dajiang/right-white-icon.svg");
+            background-size: 100% 100%;
+            width: 25px;
+            height: 60px;
+            top: 50%;
+            position: absolute;
+            margin-top: -30px;
+        }
+        .swiper-pagination{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            z-index: 10;
+            bottom: 10px;
+        }
+        .swiper-pagination-bullet{
+            margin: 0 5px;
+            padding: 10px 0;
+            background: 0 0;
+            width: 50px;
+            opacity: 1;
+            height: 8px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .swiper-pagination-bullet:after{
+            background-color: #fff;
+            opacity: .5;
+            content: '';
+            width: 100%;
+            background: rgb(191, 184, 184) 0 0;
+            display: inline-block;
+            height: 2px;
+            opacity: .2;
+            transition: all 200ms;
+            box-sizing: border-box;
+        }
+        .swiper-pagination-bullet-active:after{
+            opacity: 0.8;
+        }
+        .banner-box-2{
+            display: none;
+            position: relative;
+            height: 650px;
+            box-sizing: border-box;
+            background: #000000;
+        }
+        .banner-box-2-wrapper{
+            background-image: url("dajiang/home-banner-bg2.png");
+            background-position: 100% 50%;
+            background-size: 750px auto;
+            width: 100%;
+            height: 100%;
+            max-width: 1170px;
+            background-repeat: no-repeat;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 200px;
+            box-sizing: border-box;
+        }
+        .banner-box-2-wrapper span{
+            display: block;
+            color: #f7f8f9;
+            font-size: 42px;
+            font-weight: 500!important;
+            text-transform: uppercase;
+            font-family: "Dji","Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif!important;
+        }
+        .banner-box-2-wrapper p{
+            color: #f7f8f9;
+            font-family: "Gotham","Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 45px;
+            margin-top: 66px;
+            text-transform: uppercase;
+            margin-bottom: 66px;
+        }
+        .banner-box-2-wrapper a{
+            text-decoration: none;
+            border-bottom: 2px solid #337ab7;
+            padding-bottom: 8px;
+            color: #f7f8f9;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        .banner-box-4{
+            display: none;
+            position: relative;
+            height: 650px;
+            box-sizing: border-box;
+            background: #000000;
+            background-image: url("dajiang/home-banner-bg4.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .banner-box-4-wrapper{
+            width: 100%;
+            height: 100%;
+            max-width: 1170px;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 200px;
+            box-sizing: border-box;
+        }
+        .banner-box-4-wrapper span{
+            display: block;
+            color: #f7f8f9;
+            font-size: 42px;
+            font-weight: 500!important;
+            text-transform: uppercase;
+            font-family: "Dji","Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif!important;
+        }
+        .banner-box-4-wrapper p{
+            color: #f7f8f9;
+            font-family: "Gotham","Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 45px;
+            margin-top: 66px;
+            text-transform: uppercase;
+            margin-bottom: 66px;
+        }
+        .banner-box-4-wrapper a{
+            text-decoration: none;
+            border-bottom: 2px solid #337ab7;
+            padding-bottom: 8px;
+            color: #f7f8f9;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        .banner-box-3{
+            padding: 0;
+            margin:0;
+            background-image: url("dajiang/banner-box-3-img.jpg");
+            height: 650px;
+            width: 100%;
+            font-weight: inherit;
+            font-style: inherit;
+            font-family: inherit;
+            display: none;
+        }
+        .banner-box-3-container{
+            background-image: url("dajiang/banner-box-3-img2.png");
+            background-position: 108% 50%;
+            background-size: 730px auto;
+            width: 100%;
+            height: 100%;
+            max-width: 1170px;
+            display: table;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .banner-box-3-caption{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-family: inherit;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+        .banner-box-3-product-name{
+            margin-top:170px;
+
+        }
+        .banner-box-3-product-name-left{
+            color:#707473;
+            font-size: 42px;
+            font-family: "Dji","Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif !important;
+            font-weight: 500 !important;
+            text-transform: uppercase;
+        }
+        .banner-box-3-product-name-right{
+            font-weight: 300 !important;
+            font-size: 42px;
+            color:#707473;
+            text-transform: uppercase;
+        }
+        .banner-box-3-caption-title{
+            color:#707473;
+            font-family: "Gotham","Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 45px;
+            margin-top: 66px;
+            text-transform: uppercase;
+        }
+        .banner-box-3-caption-footer{
+            position: relative;
+            z-index: 10;
+            margin-top: 66px;
+        }
+        .banner-box-3-caption-footer a{
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-right: 30px;
+            text-decoration: none;
+
+        }
+        .banner-box-3-caption-footer-a{
+            font-size: 12px;
+            line-height: 18px;
+            position: relative;
+            font-weight: 400;
+            padding-bottom: 10px;
+            cursor: pointer;
+            color:#707473;
+            border-bottom: 2px solid #337ab7;
+        }
+        .banner-box-3-caption-footer-a-fa{
+            display: inline-block;
+            font: 14px/1 FontAwesome;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1;
+            font-size-adjust: none;
+            font-stretch: normal;
+            -x-system-font: none;
+            font-feature-settings: normal;
+            font-language-override: normal;
+            font-kerning: auto;
+            font-synthesis: weight style;
+            font-variant-alternates: normal;
+            font-variant-caps: normal;
+            font-variant-east-asian: normal;
+            font-variant-ligatures: normal;
+            font-variant-numeric: normal;
+            font-variant-position: normal;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .banner-box-3-caption-footer-btn{
+            background: #44a8f2;
+            font-weight: 400;
+            font-size: 12px;
+            color: #fff;
+            line-height: 17px;
+            padding: 9px 10px;
+            border: 2px solid #44a8f2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<!-- 1、导航 -->
+<div id="nav" class="center">
+    <!-- 主要菜单 -->
+    <div class="menu">
+
+        <!-- 大疆logo -->
+        <a href="#" id="menu-logo">
+            <img src="img/logo_DJI.png" class="logo" />
+        </a>
+        <!-- 五个菜单项 -->
+        <div class="menu_item_1" id="menu_DRONES">
+            <a href="#" class="menu_item_text" id="DRONES">DRONES</a>
+            <div class="second_level_menu_1">
+                <div id="box1_1">
+                    <a href="#" class="main_title">Consumer</a>
+                    <a href="#" id="mavic_text" class="sub_title_1">Mavic</a>
+                    <a href="#" id="Dji_Goggles_text" class="sub_title_1" >Dji Goggles</a>
+                    <a href="#" id="Phantom_4_Pro_text" class="sub_title_1" >Phantom 4 Pro</a>
+                    <a href="#" id="phantom_4_advanced_text" class="sub_title_1" >phantom 4 advanced</a>
+                    <a href="#" id="phantom_4_text" class="sub_title_1" >phantom 4</a>
+                    <a href="#" id="phantom_3_Series_text" class="sub_title_1" >phantom 3 Series</a>
+                    <a href="#" id="Consumer_Drones_Comparison_text" class="sub_title_1" >Consumer Drones Comparison</a>
+                </div>
+                <div id="box2_1">
+                    <a href="#" class="main_title">Professional</a>
+                    <a href="#" id="Inspire_2_text" class="sub_title_1" >Inspire 2</a>
+                    <a href="#" id="Inspire_1_text" class="sub_title_1" >Inspire 1</a>
+                    <a href="#" id="Crystalsky_text" class="sub_title_1" >Crystalsky</a>
+                    <a href="#" id="Cendence_text" class="sub_title_1" >Cendence</a>
+                    <a href="#" id="Inspire_Comparison_text" class="sub_title_1" >Inspire Comparison</a>
+                </div>
+                <div class="box_img">
+                    <a href="#" class="sub_box_img">
+                        <img src="img/mavic.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/inspir2.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/phantom2 pro.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/inspire 2 accessories.jpg"/>
+                    </a>
+                    <div id="box_3_1">
+                        <img src="img/mavic2.png" id="mavic_img"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="menu_item_2" id="menu_IMAGING">
+            <a href="#" class="menu_item_text" id="IMAGING">IMAGING SOLUTIONS</a>
+            <div class="second_level_menu_2">
+                <div id="box1_2">
+                    <a href="#" id="Aerial_text" class="main_title">Aerial</a>
+                    <a href="#" id="X5S_text" class="sub_title_2" >X5S</a>
+                    <a href="#" id="X4S_text" class="sub_title_2" >X4S</a>
+                    <a href="#" id="X5R_text" class="sub_title_2" >X5R</a>
+                    <a href="#" id="X5_text" class="sub_title_2" >X5</a>
+                    <a href="#" id="Zenmuse_Camera_Comparison_text" class="sub_title_2" >Zenmuse Camera Comparison</a>
+                </div>
+                <div id="box2_2">
+                    <a href="#" id="Pro_text" class="main_title">Pro</a>
+                    <a href="#" id="Ronin_2_text" class="sub_title_2" >Ronin 2</a>
+                    <a href="#" id="Ronin_MX_text" class="sub_title_2" >Ronin-MX</a>
+                    <a href="#" id="Ronin_M_text" class="sub_title_2" >Ronin-M</a>
+                    <a href="#" id="Ronin_text" class="sub_title_2" >Ronin</a>
+                    <a href="#" id="DJI_Focus_text" class="sub_title_2" >DJI Focus</a>
+                    <a href="#" id="RONIN_COMPARISON_text" class="sub_title_2" >RONIN COMPARISON</a>
+                </div>
+                <div id="box3_2">
+                    <a href="#" id="HandHeld_text" class="main_title">HandHeld</a>
+                    <a href="introduce.html" id="Osmo_Mobile_text" class="sub_title_2" >Osmo Mobile</a>
+                    <a href="#" id="Osmo_+_text" class="sub_title_2" >Osmo +</a>
+                    <a href="#" id="Osmo_Pro_text" class="sub_title_2" >Osmo Pro / Raw</a>
+                    <a href="#" id="Osmo_text" class="sub_title_2" >Osmo</a>
+                    <a href="#" id="OSMO_ACCESSORIES_text" class="sub_title_2" >OSMO ACCESSORIES</a>
+                    <a href="#" id="Osmo_Comparison_text" class="sub_title_2" >Osmo Comparison</a>
+                </div>
+                <div class="box_img">
+                    <a href="#" class="sub_box_img">
+                        <img src="img/zenmuse x5s.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/osmo.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/ronin-mx.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/focus.jpg"/>
+                    </a>
+                    <div id="box_4_2">
+                        <img src="img/X5S.png" id="x5s_img"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_item_3" id="menu_ENTERPRISE">
+            <a href="#" class="menu_item_text" id="ENTERPRISE">ENTERPRISE</a>
+            <div class="second_level_menu_3">
+                <div id="box1_3">
+                    <a href="#" id="DJI_Enterprise_text" class="main_title">DJI Enterprise</a>
+                    <a href="#" id="DRONES_text" class="main_title" >DRONES</a>
+                    <a href="#" id="MATRICE_200_SERIES_text" class="sub_title_1" >MATRICE 200 SERIES</a>
+                    <a href="#" id="MATRICE_600_PRO_text" class="sub_title_1" >MATRICE 600 PRO</a>
+                    <a href="#" id="MATRICE_100_text" class="sub_title_1" >MATRICE 100</a>
+                    <a href="#" id="S1000_plus_text" class="sub_title_1" >S1000+</a>
+                    <a href="#" id="Solutions_text" class="main_title" >Solutions</a>
+                    <a href="#" id="AGRAS_MG_1_text" class="sub_title_1" >AGRAS MG-1</a>
+                    <a href="#" id="AGRAS_MG_1S_text" class="sub_title_1" >AGRAS MG-1S</a>
+                </div>
+                <div id="box2_3">
+                    <a href="#" id="Payloads_text" class="main_title">Payloads</a>
+                    <a href="#" id="ZENMUSE_XT_text" class="sub_title_1" >ZENMUSE XT</a>
+                    <a href="#" id="ZENMUSE_Z30_text" class="sub_title_1" >ZENMUSE Z30</a>
+                    <a href="#" id="SOFTWARE_text" class="main_title" >SOFTWARE</a>
+                    <a href="#" id="GS_PRO_text" class="sub_title_1" >GS PRO</a>
+                    <a href="#" id="Components_text" class="main_title" >Components</a>
+                    <a href="#" id="DJI_TRACKTENNA_text" class="sub_title_1" >DJI TRACKTENNA</a>
+                </div>
+                <div class="box_img">
+                    <a href="#" class="sub_box_img">
+                        <img src="img/agriculture.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/building.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/energy.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/public.jpg"/>
+                    </a>
+                    <div id="box_3_3">
+                        <img src="img/MATRICE 200 SERIES.png" id="MATRICE_200_SERIES_img"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_item_4" id="menu_COMMUNITY">
+            <a href="#" class="menu_item_text" id="COMMUNITY">COMMUNITY</a>
+            <div class="second_level_menu_4">
+                <a href="#" class="second_level_menu_4_text">SKIPIXEL</a>
+                <a href="#" class="second_level_menu_4_text">DJI FORUM</a>
+                <a href="#" class="second_level_menu_4_text">SHOWCASE</a>
+            </div>
+        </div>
+        <div class="menu_item_5" id="menu_SUPPORT">
+            <a href="#" class="menu_item_text" id="SUPPORT">SUPPORT</a>
+            <div class="second_level_menu_5">
+                <div id="box1_5">
+                    <a href="#" id="Product_Support_text" class="main_title">Product Support</a>
+                    <a href="#" id="MAVIC_text" class="sub_title_1">MAVIC</a>
+                    <a href="#" id="PHANTOM_text" class="sub_title_1" >PHANTOM</a>
+                    <a href="#" id="INSPIRE_text" class="sub_title_1" >INSPIRE</a>
+                    <a href="#" id="OSMO_text" class="sub_title_1" >OSMO</a>
+                    <a href="#" id="RONIN_text" class="sub_title_1" >RONIN</a>
+                    <a href="#" id="INDUSTRIAL_text" class="sub_title_1" >INDUSTRIAL</a>
+                </div>
+                <div id="box2_5">
+                    <a href="#" id="SERVICE_PLANS_text" class="main_title">SERVICE PLANS</a>
+                    <a href="#" id="DJI_CARE_REFRESH_text" class="sub_title_1">DJI CARE REFRESH</a>
+                    <a href="#" id="DJI_CARE_text" class="sub_title_1" >DJI CARE</a>
+                    <a href="#" id="OSMO_SHIELD_text" class="sub_title_1" >OSMO SHIELD</a>
+                    <a href="#" id="DJI_CIRCLE_text" class="sub_title_1" >DJI CIRCLE</a>
+                </div>
+                <div id="box3_5">
+                    <a href="#" id="REPAIR_SERVICES_text" class="main_title">REPAIR SERVICES</a>
+                    <a href="#" id="ONLINE_REPAIR_text" class="sub_title_1">ONLINE REPAIR</a>
+                    <a href="#" id="REPAIR_PROGRESS_text" class="sub_title_1" >REPAIR PROGRESS</a>
+                    <a href="#" id="ACCESSORY_PRICE_text" class="sub_title_1" >ACCESSORY PRICE</a>
+                    <a href="#" id="TERMS_text" class="main_title" >TERMS</a>
+                    <a href="#" id="HELP_PURCHASING_text" class="sub_title_1" >HELP PURCHASING</a>
+                    <a href="#" id="AFTER-SALES_POLICIES_text" class="sub_title_1" >AFTER-SALES POLICIES</a>
+                </div>
+
+                <div class="box_img">
+                    <a href="#" class="sub_box_img">
+                        <img src="img/product_support.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/repair_services.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/terms.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/service_plans.jpg"/>
+                    </a>
+                    <div id="box_4_5">
+                        <img src="img/mavic2.png" id="mavic_2_img"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 搜索按钮 -->
+        <a href="#" class="search_bt_box">
+            <img src="img/search.svg"  class="search_bt"/>
+        </a>
+    </div>
+    <!-- 购物车 -->
+    <a href="#" class="shop">
+        <div class="shop_in_box">
+            <span class="shop_text">STORE</span>
+            <img src="img/shop.svg" class="shop_logo" />
+        </div>
+
+    </a>
+    <!-- 语言 -->
+    <div href="#" class="lang">
+        <a href="#" class="lang_box">
+            <img src="img/lang.svg" class="logo_lang"/>
+            <span class="lang_text">
+						ENGLISH
+					</span>
+        </a>
+        <div class="second_level_menu_6">
+            <a href="#" class="second_level_menu_6_text">english</a>
+            <a href="#" class="second_level_menu_6_text">deutsch</a>
+            <a href="#" class="second_level_menu_6_text">简体中文</a>
+            <a href="#" class="second_level_menu_6_text">繁體中文</a>
+            <a href="#" class="second_level_menu_6_text">日本語</a>
+            <a href="#" class="second_level_menu_6_text">한국어</a>
+            <a href="#" class="second_level_menu_6_text">Françai</a>
+            <a href="#" class="second_level_menu_6_text">Español</a>
+            <a href="#" class="second_level_menu_6_text">русский</a>
+            <!--<div class="box">
+            </div>-->
+        </div>
+    </div>
+    <!-- 登陆 -->
+    <div class="login">
+        <a href="#" class="login_box">
+            <img src="img/user-icon.svg" class="user_icon"/>
+        </a>
+        <div class="second_level_menu_7">
+            <a href="#" class="second_level_menu_7_text">login</a>
+            <a href="#" class="second_level_menu_7_text">register</a>
+
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="banner-box banner-box-1">
+         <h2 style="color: #f7f8f9;font-size: 64px;margin-bottom: 25px;font-weight: 500;text-align: center">SEIZE THE MOMENT</h2>
+        <p>LIVE&nbsp;AT &nbsp;11:30AM &nbsp;EDT &nbsp;|&nbsp;MAY 24 &nbsp;| &nbsp; NEW YORK</p>
+        <a href="#">Lear &nbsp;More</a>
+    </div>
+    <div class="banner-box banner-box-2">
+       <div class="banner-box-2-wrapper">
+          <span>RONIN 2</span>
+           <p>CREATE YOUR LEGACY</p>
+           <a href="#">LEARN&nbsp; MORE</a>
+           <a href="#">WATCH&nbsp; VIDEO</a>
+       </div>
+    </div>
+    <div class="banner-box banner-box-3">
+        <div class="banner-box-3-container">
+            <div class="banner-box-3-caption">
+                <div class="banner-box-3-product-name">
+                    <span class="banner-box-3-product-name-left">phantom 4 </span>
+                    <span class="banner-box-3-product-name-right">advanced</span>
+                </div>
+                <div class="banner-box-3-caption-title">
+                    VISIONARY INTELLIGENCE
+                    <br>
+                    ELEVATED IMAGINATION.
+                </div>
+                <div class="banner-box-3-caption-footer">
+                    <a href="" title="" class="banner-box-3-caption-footer-a">LEARN MORE</a>
+                    <a href="" title="" class="banner-box-3-caption-footer-a">
+                        WATCH VIDEO
+                        <i class="banner-box-3-caption-footer-a-fa"></i>
+                    </a>
+                    <a href="" title="" class="banner-box-3-caption-footer-btn">
+                        BUY NOW
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="banner-box banner-box-4">
+        <div class="banner-box-4-wrapper">
+            <span>mavic</span>
+            <p>WHEREVER YOU GO</p>
+            <a href="#">LEARN&nbsp; MORE</a>
+            <a href="#">WATCH&nbsp; VIDEO</a>
+        </div>
+    </div>
+    <div id="prev" class="banner-button-prev">
+        <i class="left-icon"></i>
+    </div>
+    <div id="next" class="banner-button-next">
+        <i class="right-icon"></i>
+    </div>
+    <div class="swiper-pagination">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+    </div>
+</div>
+<!--分割符-->
+<div id="view">
+    <div class="view_box" id="view_box_1">
+        <a href="#">
+            <img src="img/img_1.png" class="view_box_img" />
+            <div class="text_wrap">
+                <div class="text">
+                    <h3 class="title">
+                        Find a Store
+                    </h3>
+                    <!-- 线条 -->
+                    <div class="line">
+                    </div>
+                    <div class="main">
+                        Find your nearest DJI dealer
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+    <div class="view_box" id="view_box_2">
+        <a href="#">
+            <img src="img/img_2.jpg" class="view_box_img" />
+            <div class="text_wrap">
+                <div class="text">
+                    <h3 class="title">
+                        Showcase
+                    </h3>
+                    <!-- 线条 -->
+                    <div class="line">
+                    </div>
+                    <div class="main">
+                        Watch our best videos, and share yours
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="view_box" id="view_box_3">
+        <a href="#">
+            <img src="img/img_3.jpg" class="view_box_img" />
+            <div class="text_wrap">
+                <div class="text">
+                    <h3 class="title">
+                        DJI GOGGLES
+                    </h3>
+                    <!-- 线条 -->
+                    <div class="line">
+                    </div>
+                    <div class="main">
+                        See a different world
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!--底部-->
+<!-- 页面底部 -->
+<div id="bottom">
+    <div id="bottom_box">
+        <div id="bottom_box_1" class="bottom_box_same">
+            <a href="#" class="bottom_box_same_maintitle">ABOUT DJI</a>
+            <a href="#" class="bottom_box_same_subtitle">Who We Are</a>
+            <a href="#" class="bottom_box_same_subtitle">Events</a>
+            <a href="#" class="bottom_box_same_subtitle">Careers</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Global Citizenship</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Enterprise</a>
+            <a href="#" class="bottom_box_same_subtitle">Contact Us</a>
+
+        </div>
+        <div id="bottom_box_2" class="bottom_box_same">
+            <a href="#" class="bottom_box_same_maintitle">NEWSROOM</a>
+            <a href="#" class="bottom_box_same_subtitle">News</a>
+            <a href="#" class="bottom_box_same_subtitle">Media Coverage</a>
+            <a href="#" class="bottom_box_same_subtitle">Altitude</a>
+        </div>
+        <div id="bottom_box_3" class="bottom_box_same">
+            <a href="#" class="bottom_box_same_maintitle">WHERE TO BUY</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Online Store</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Store</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Store App</a>
+            <a href="#" class="bottom_box_same_subtitle">Find a Store</a>
+            <a href="#" class="bottom_box_same_subtitle">Become a Dealer</a>
+
+        </div>
+        <div id="bottom_box_4" class="bottom_box_same">
+            <span class="bottom_box_same_maintitle">COMMUNITY</span>
+            <a href="#" class="bottom_box_same_subtitle">SkyPixel</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Forum</a>
+            <a href="#" class="bottom_box_same_subtitle">Showcase</a>
+        </div>
+        <div id="bottom_box_5" class="bottom_box_same">
+            <span class="bottom_box_same_maintitle">EDUCATION</span>
+            <a href="#" class="bottom_box_same_subtitle">Fly Safe</a>
+            <a href="#" class="bottom_box_same_subtitle">Geo System</a>
+        </div>
+        <div id="bottom_box_6" class="bottom_box_same">
+            <a href="#" class="bottom_box_same_maintitle">DEVELOPER</a>
+            <a href="#" class="bottom_box_same_subtitle">Forum</a>
+            <a href="#" class="bottom_box_same_subtitle">Github</a>
+        </div>
+    </div>
+    <div id="bottom_footer">
+        <div id="bottom_footer_left">
+            <a href="#">
+                <img src="dajiang/DJI_POSSIBLE.png" id="bottom_footer_left_img"/>
+            </a>
+        </div>
+        <div id="bottom_footer_center">
+            <div class="bottom_footer_center_box">
+                <p class="bottom_footer_center_box_text">
+                    Feedback on web experience？
+                    <a href="#" class="bottom_footer_center_box_text_1">
+                        Click here
+                    </a>
+                </p>
+            </div>
+            <div class="bottom_footer_center_box">
+                <p class="bottom_footer_center_box_text">
+                    Copyright © 2017 DJI All Rights Reserved.
+                    <a href="#" class="bottom_footer_center_box_text_2">
+                        Privacy Policy
+                    </a>
+                    <a href="#" class="bottom_footer_center_box_text_2">
+                        Use of Cookies
+                    </a>
+                    <a href="#" class="bottom_footer_center_box_text_2">
+                        Terms of Use
+                    </a>
+                    <a href="#" class="bottom_footer_center_box_text_2">
+                        Site Map
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div id="bottom_footer_right">
+            <a href="#" id="bottom_footer_right_social_img">
+                <img src="dajiang/social_img.png"/>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script>
+    window.onload=function(){
+        var prev=document.getElementById("prev");
+        var next=document.getElementById("next");
+        var bannerBox=document.getElementsByClassName("banner-box");
+        var swiper=document.getElementsByClassName("swiper-pagination-bullet");
+        var bannerFlag=0;
+        next.onclick=function(){
+            bannerBox[bannerFlag].style.display="none";
+            bannerBox[bannerFlag+1].style.display="block";
+            swiper[bannerFlag].setAttribute("class","swiper-pagination-bullet");
+            swiper[bannerFlag+1].setAttribute("class","swiper-pagination-bullet swiper-pagination-bullet-active");
+            bannerFlag++;
+            if(bannerFlag>3)
+                bannerFlag=0;
+        }
+        prev.onclick=function () {
+            if(bannerFlag<0){
+                bannerBox[0].style.display="none";
+                bannerBox[3].style.display="block";
+                swiper[0].setAttribute("class","swiper-pagination-bullet");
+                swiper[3].setAttribute("class","swiper-pagination-bullet swiper-pagination-bullet-active");
+                bannerBox=3;
+                bannerBox--;
+                return true;
+            }
+            bannerBox[bannerFlag].style.display="none";
+            bannerBox[bannerFlag-1].style.display="block";
+            swiper[bannerFlag].setAttribute("class","swiper-pagination-bullet");
+            swiper[bannerFlag-1].setAttribute("class","swiper-pagination-bullet swiper-pagination-bullet-active");
+            bannerFlag--;
+
+        }
+        var menu_item_1 = document.getElementById('menu_DRONES');
+        var menu_item_2 = document.getElementById('menu_IMAGING');
+        var menu_item_3 = document.getElementById('menu_ENTERPRISE');
+        var menu_item_4 = document.getElementById('menu_COMMUNITY');
+        var menu_item_5 = document.getElementById('menu_SUPPORT');
+        var drones = document.getElementById('DRONES');
+        var imaging = document.getElementById('IMAGING');
+        var enterprise = document.getElementById('ENTERPRISE');
+        var community = document.getElementById('COMMUNITY');
+        var support = document.getElementById('SUPPORT');
+        menu_item_1.onmousemove = function(){
+            imaging.style.color = '#dbd7dc';
+            enterprise.style.color = '#dbd7dc';
+            community.style.color = '#dbd7dc';
+            support.style.color = '#dbd7dc';
+        }
+        menu_item_1.onmouseleave = function(){
+            imaging.style.color = '#505050';
+            enterprise.style.color = '#505050';
+            community.style.color = '#505050';
+            support.style.color = '#505050';
+        }
+        menu_item_2.onmousemove = function(){
+            drones.style.color = '#dbd7dc';
+            enterprise.style.color = '#dbd7dc';
+            community.style.color = '#dbd7dc';
+            support.style.color = '#dbd7dc';
+        }
+        menu_item_2.onmouseleave = function(){
+            drones.style.color = '#505050';
+            enterprise.style.color = '#505050';
+            community.style.color = '#505050';
+            support.style.color = '#505050';
+        }
+        menu_item_3.onmousemove = function(){
+            imaging.style.color = '#dbd7dc';
+            drones.style.color = '#dbd7dc';
+            community.style.color = '#dbd7dc';
+            support.style.color = '#dbd7dc';
+        }
+
+        menu_item_3.onmouseleave = function(){
+            imaging.style.color = '#505050';
+            drones.style.color = '#505050';
+            community.style.color = '#505050';
+            support.style.color = '#505050';
+        }
+
+        menu_item_4.onmousemove = function(){
+            imaging.style.color = '#dbd7dc';
+            enterprise.style.color = '#dbd7dc';
+            drones.style.color = '#dbd7dc';
+            support.style.color = '#dbd7dc';
+        }
+
+        menu_item_4.onmouseleave = function(){
+            imaging.style.color = '#505050';
+            enterprise.style.color = '#505050';
+            drones.style.color = '#505050';
+            support.style.color = '#505050';
+        }
+
+        menu_item_5.onmousemove = function(){
+            imaging.style.color = '#dbd7dc';
+            enterprise.style.color = '#dbd7dc';
+            community.style.color = '#dbd7dc';
+            drones.style.color = '#dbd7dc';
+        }
+
+        menu_item_5.onmouseleave = function(){
+            imaging.style.color = '#505050';
+            enterprise.style.color = '#505050';
+            community.style.color = '#505050';
+            drones.style.color = '#505050';
+        }
+        var mavic = document.getElementById('mavic_text');
+        var Dji_Goggles = document.getElementById('Dji_Goggles_text');
+        var Phantom_4_Pro = document.getElementById('Phantom_4_Pro_text');
+        var phantom_4_advanced = document.getElementById('phantom_4_advanced_text');
+        var phantom_4 = document.getElementById('phantom_4_text');
+        var phantom_3_Series = document.getElementById('phantom_3_Series_text');
+        var Consumer_Drones_Comparison = document.getElementById('Consumer_Drones_Comparison_text');
+        var Inspire_2 = document.getElementById('Inspire_2_text');
+        var Inspire_1 = document.getElementById('Inspire_1_text');
+        var Crystalsky = document.getElementById('Crystalsky_text');
+        var Cendence = document.getElementById('Cendence_text');
+        var Inspire_Comparison = document.getElementById('Inspire_Comparison_text');
+
+        // 第二个二级菜单
+        var X5S = document.getElementById('X5S_text');
+        var X4S = document.getElementById('X4S_text');
+        var X5R = document.getElementById('X5R_text');
+        var X5 = document.getElementById('X5_text');
+        var Zenmuse_Camera_Comparison = document.getElementById('Zenmuse_Camera_Comparison_text');
+        var Ronin_2 = document.getElementById('Ronin_2_text');
+        var Ronin_MX = document.getElementById('Ronin_MX_text');
+        var Ronin_M = document.getElementById('Ronin_M_text');
+        var Ronin = document.getElementById('Ronin_text');
+        var DJI_Focus = document.getElementById('DJI_Focus_text');
+        var RONIN_COMPARISON = document.getElementById('RONIN_COMPARISON_text');
+        var Osmo_Mobile = document.getElementById('Osmo_Mobile_text');
+        var Osmo_plus = document.getElementById('Osmo_+_text');
+        var Osmo_Pro = document.getElementById('Osmo_Pro_text');
+        var Osmo = document.getElementById('Osmo_text');
+        var OSMO_ACCESSORIES = document.getElementById('OSMO_ACCESSORIES_text');
+        var Osmo_Comparison = document.getElementById('Osmo_Comparison_text');
+
+        //第三个二级菜单
+        var MATRICE_200_SERIES = document.getElementById('MATRICE_200_SERIES_text');
+        var MATRICE_600_PRO = document.getElementById('MATRICE_600_PRO_text');
+        var MATRICE_100 = document.getElementById('MATRICE_100_text');
+        var S1000_plus = document.getElementById('S1000_plus_text');
+        var AGRAS_MG_1 = document.getElementById('AGRAS_MG_1_text');
+        var AGRAS_MG_1S = document.getElementById('AGRAS_MG_1S_text');
+        var ZENMUSE_XT = document.getElementById('ZENMUSE_XT_text');
+        var ZENMUSE_Z30 = document.getElementById('ZENMUSE_Z30_text');
+        var GS_PRO = document.getElementById('GS_PRO_text');
+        var DJI_TRACKTENNA = document.getElementById('DJI_TRACKTENNA_text');
+
+        // 第五个二级菜单
+        var MAVIC = document.getElementById('MAVIC_text');
+        var PHANTOM = document.getElementById('PHANTOM_text');
+        var INSPIRE = document.getElementById('INSPIRE_text');
+        var OSMO = document.getElementById('OSMO_text');
+        var RONIN = document.getElementById('RONIN_text');
+        var INDUSTRIAL = document.getElementById('INDUSTRIAL_text');
+
+        var box1 = document.getElementById('box_3_1');
+        var box2 = document.getElementById('box_4_2');
+        var box3 = document.getElementById('box_3_3');
+        var box5 = document.getElementById('box_4_5');
+
+        var image1 = document.getElementById('mavic_img');
+        var image2 = document.getElementById('x5s_img');
+        var image3 = document.getElementById('MATRICE_200_SERIES_img');
+        var image5 = document.getElementById('mavic_2_img');
+        mavic.onmousemove = function(){
+            image1.setAttribute("src","img/mavic2.png");
+            box1.style.display = 'block';
+        }
+        mavic.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        Dji_Goggles.onmousemove = function() {
+            image1.setAttribute('src', 'img/Dji Goggles.png');
+            box1.style.display = 'block';
+
+        }
+        Dji_Goggles.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        Phantom_4_Pro.onmousemove = function() {
+            image1.setAttribute('src', 'img/Phantom 4 Pro.png');
+            box1.style.display = 'block';
+
+        }
+        Phantom_4_Pro.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        phantom_4_advanced.onmousemove = function() {
+            image1.setAttribute('src', 'img/phantom 4 advanced.png');
+            box1.style.display = 'block';
+
+        }
+        phantom_4_advanced.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        phantom_4.onmousemove = function() {
+            image1.setAttribute('src', 'img/Dji Goggles.png');
+            box1.style.display = 'block';
+
+        }
+        phantom_4.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        phantom_3_Series.onmousemove = function() {
+            image1.setAttribute('src', 'img/phantom 3 Series.png');
+            box1.style.display = 'block';
+
+        }
+        phantom_3_Series.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        Consumer_Drones_Comparison.onmousemove = function() {
+            image1.setAttribute('src', 'img/Consumer Drones Comparison.png');
+            box1.style.display = 'block';
+
+        }
+        Consumer_Drones_Comparison.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        Inspire_2.onmousemove = function() {
+            image1.setAttribute('src', 'img/Inspire 2.png');
+            box1.style.display = 'block';
+
+        }
+        Inspire_2.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        Inspire_1.onmousemove = function() {
+            image1.setAttribute('src', 'img/Inspire 1.png');
+            box1.style.display = 'block';
+
+        }
+        Inspire_1.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        Crystalsky.onmousemove = function() {
+            image1.setAttribute('src', 'img/Crystalsky.png');
+            box1.style.display = 'block';
+
+        }
+        Crystalsky.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        Cendence.onmousemove = function() {
+            image1.setAttribute('src', 'img/Cendence.png');
+            box1.style.display = 'block';
+
+        }
+        Cendence.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+
+        Inspire_Comparison.onmousemove = function() {
+            image1.setAttribute('src', 'img/Inspire Comparison.png');
+            box1.style.display = 'block';
+
+        }
+        Inspire_Comparison.onmouseleave = function() {
+            box1.style.display = 'none';
+        }
+        // 第二个二级菜单
+        X5S.onmousemove = function() {
+            image2.setAttribute('src', 'img/X5S.png');
+            box2.style.display = 'block';
+
+        }
+        X5S.onmouseleave = function() {
+            box2.style.display = 'none';
+        }
+
+        X4S.onmousemove = function() {
+            image2.setAttribute('src', 'img/X4S.png');
+            box2.style.display = 'block';
+
+        }
+        X4S.onmouseleave = function() {
+            box2.style.display = 'none';
+        }
+
+        X5R.onmousemove = function() {
+            image2.setAttribute('src', 'img/X5R.png');
+            box2.style.display = 'block';
+
+        }
+        X5R.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        X5.onmousemove = function() {
+            image2.setAttribute('src', 'img/X5.png');
+            box2.style.display = 'block';
+
+        }
+        X5.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Zenmuse_Camera_Comparison.onmousemove = function() {
+            image2.setAttribute('src', 'img/Zenmuse Camera Comparison.png');
+            box2.style.display = 'block';
+
+        }
+        Zenmuse_Camera_Comparison.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Ronin_2.onmousemove = function() {
+            image2.setAttribute('src', 'img/Ronin 2.png');
+            box2.style.display = 'block';
+
+        }
+        Ronin_2.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Ronin_MX.onmousemove = function() {
+            image2.setAttribute('src', 'img/Ronin-MX.png');
+            box2.style.display = 'block';
+
+        }
+        Ronin_MX.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Ronin_M.onmousemove = function() {
+            image2.setAttribute('src', 'img/Ronin-M.png');
+            box2.style.display = 'block';
+
+        }
+        Ronin_M.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Ronin.onmousemove = function() {
+            image2.setAttribute('src', 'img/Ronin.png');
+            box2.style.display = 'block';
+
+        }
+        Ronin.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        DJI_Focus.onmousemove = function() {
+            image2.setAttribute('src', 'img/DJI Focus.png');
+            box2.style.display = 'block';
+
+        }
+        DJI_Focus.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        RONIN_COMPARISON.onmousemove = function() {
+            image2.setAttribute('src', 'img/RONIN COMPARISON.png');
+            box2.style.display = 'block';
+
+        }
+        RONIN_COMPARISON.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Osmo_Mobile.onmousemove = function() {
+            image2.setAttribute('src', 'img/Osmo Mobile.png');
+            box2.style.display = 'block';
+
+        }
+        Osmo_Mobile.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Osmo_plus.onmousemove = function() {
+            image2.setAttribute('src', 'img/Osmo plus.png');
+            box2.style.display = 'block';
+
+        }
+        Osmo_plus.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Osmo_Pro.onmousemove = function() {
+            image2.setAttribute('src', 'img/Osmo Pro Raw.png');
+            box2.style.display = 'block';
+
+        }
+        Osmo_Pro.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Osmo.onmousemove = function() {
+            image2.setAttribute('src', 'img/Osmo.png');
+            box2.style.display = 'block';
+
+        }
+        Osmo.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        OSMO_ACCESSORIES.onmousemove = function() {
+            image2.setAttribute('src', 'img/OSMO ACCESSORIES.png');
+            box2.style.display = 'block';
+
+        }
+        OSMO_ACCESSORIES.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        Osmo_Comparison.onmousemove = function() {
+            image2.setAttribute('src', 'img/Osmo Comparison.png');
+            box2.style.display = 'block';
+
+        }
+        Osmo_Comparison.onmouseleave = function() {
+
+            box2.style.display = 'none';
+        }
+
+        // 第三个二级菜单
+        MATRICE_200_SERIES.onmousemove = function() {
+            image3.setAttribute('src', 'img/MATRICE 200 SERIES.png');
+            box3.style.display = 'block';
+
+        }
+        MATRICE_200_SERIES.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        MATRICE_600_PRO.onmousemove = function() {
+            image3.setAttribute('src', 'img/MATRICE 600 PRO.png');
+            box3.style.display = 'block';
+
+        }
+        MATRICE_600_PRO.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        MATRICE_100.onmousemove = function() {
+            image3.setAttribute('src', 'img/MATRICE 100.png');
+            box3.style.display = 'block';
+
+        }
+        MATRICE_100.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        S1000_plus.onmousemove = function() {
+            image3.setAttribute('src', 'img/S1000_plus.png');
+            box3.style.display = 'block';
+
+        }
+        S1000_plus.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        AGRAS_MG_1.onmousemove = function() {
+            image3.setAttribute('src', 'img/AGRAS MG-1.png');
+            box3.style.display = 'block';
+
+        }
+        AGRAS_MG_1.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        AGRAS_MG_1S.onmousemove = function() {
+            image3.setAttribute('src', 'img/AGRAS MG-1S.png');
+            box3.style.display = 'block';
+
+        }
+        AGRAS_MG_1S.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        ZENMUSE_XT.onmousemove = function() {
+            image3.setAttribute('src', 'img/ZENMUSE XT.png');
+            box3.style.display = 'block';
+
+        }
+        ZENMUSE_XT.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        ZENMUSE_Z30.onmousemove = function() {
+            image3.setAttribute('src', 'img/ZENMUSE Z30.png');
+            box3.style.display = 'block';
+
+        }
+        ZENMUSE_Z30.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        GS_PRO.onmousemove = function() {
+            image3.setAttribute('src', 'img/GS PRO.png');
+            box3.style.display = 'block';
+
+        }
+        GS_PRO.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        DJI_TRACKTENNA.onmousemove = function() {
+            image3.setAttribute('src', 'img/DJI TRACKTENNA.png');
+            box3.style.display = 'block';
+
+        }
+        DJI_TRACKTENNA.onmouseleave = function() {
+            box3.style.display = 'none';
+        }
+
+        // 第五个二级菜单
+        MAVIC.onmousemove = function() {
+            image5.setAttribute('src', 'img/mavic2.png');
+            box5.style.display = 'block';
+
+        }
+        MAVIC.onmouseleave = function() {
+            box5.style.display = 'none';
+        }
+
+        PHANTOM.onmousemove = function() {
+            image5.setAttribute('src', 'img/Phantom 4 Pro.png');
+            box5.style.display = 'block';
+
+        }
+        PHANTOM.onmouseleave = function() {
+            box5.style.display = 'none';
+        }
+
+        INSPIRE.onmousemove = function() {
+            image5.setAttribute('src', 'img/Inspire 2.png');
+            box5.style.display = 'block';
+
+        }
+        INSPIRE.onmouseleave = function() {
+            box5.style.display = 'none';
+        }
+
+        OSMO.onmousemove = function() {
+            image5.setAttribute('src', 'img/Osmo Pro Raw.png');
+            box5.style.display = 'block';
+
+        }
+        OSMO.onmouseleave = function() {
+            box5.style.display = 'none';
+        }
+
+        RONIN.onmousemove = function() {
+            image5.setAttribute('src', 'img/Ronin-MX.png');
+            box5.style.display = 'block';
+
+        }
+        RONIN.onmouseleave = function() {
+            box5.style.display = 'none';
+        }
+
+        INDUSTRIAL.onmousemove = function() {
+            image5.setAttribute('src', 'img/S1000_plus.png');
+            box5.style.display = 'block';
+
+        }
+        INDUSTRIAL.onmouseleave = function() {
+            box5.style.display = 'none';
+        }
+    }
+
+</script>
+</html>

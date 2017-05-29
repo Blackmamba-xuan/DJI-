@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5-NEW</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5-NEW" transform="translate(1.000000, 1.000000)" stroke="#707473">
+            <g id="Page-1">
+                <g id="Group-4">
+                    <circle id="Oval-2-Copy-9" stroke-width="1.5" cx="9" cy="9" r="9"></circle>
+                    <path d="M0.5,9.5 L17.5,9.5" id="Line"></path>
+                    <path d="M9,1 L9,18" id="Line-Copy"></path>
+                    <path d="M13.055542,1.34924316 C13.055542,1.34924316 14.4910889,4.35510254 14.4910889,9.4342041 C14.4910889,14.5133057 13.0135498,16.8240967 13.0135498,16.8240967" id="Line-Copy-2"></path>
+                    <path d="M8.31524674,6.34625245 C8.31524674,6.34625245 9.75079362,9.20488945 9.75079362,14.0352244 C9.75079362,18.8655594 8.27325455,21.0631714 8.27325455,21.0631714" id="Line-Copy-4" transform="translate(9.012024, 13.704712) rotate(90.000000) translate(-9.012024, -13.704712) "></path>
+                    <path d="M8.29193063,-3.19000297 C8.29193063,-3.19000297 9.72747751,-0.331365969 9.72747751,4.498969 C9.72747751,9.32930397 8.24993844,11.526916 8.24993844,11.526916" id="Line-Copy-9" transform="translate(8.988708, 4.168457) rotate(270.000000) translate(-8.988708, -4.168457) "></path>
+                    <path d="M3.55090399,1 C3.55090399,1 4.98645087,4.00585938 4.98645087,9.08496094 C4.98645087,14.1640625 3.5089118,16.4748535 3.5089118,16.4748535" id="Line-Copy-3" transform="translate(4.247681, 8.737427) scale(-1, 1) translate(-4.247681, -8.737427) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

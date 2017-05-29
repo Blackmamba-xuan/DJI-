@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="css/dajiang.css" rel="stylesheet" type="text/css">
+    <link href="dajiang/logo.png" rel="Shortcut Icon">
+    <link rel="stylesheet" href="css/dji_styles_zhouyi.css">
+    <link rel="stylesheet" type="text/css" href="css/bt_styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/jiao.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav_styles.css" />
+    <title>大疆无人机</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        @media screen and (max-width: 1280px) {
+            .container{
+                height: 78%;
+            }
+            .oso-mobile-s8-ul li{
+                width: 24.6%;
+            }
+            .clearfix li .img-p{
+                width: 350px;
+            }
+        }
+        @media screen and (min-width: 1400px) {
+          .oso-mobile-s8-container{
+              width: 1400px;
+          }
+            .oso-mobile-s3-container{
+                width: 1400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .oso-mobile-s3-container{
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- 1、导航 -->
+<div id="nav" class="center">
+    <!-- 主要菜单 -->
+    <div class="menu">
+
+        <!-- 大疆logo -->
+        <a href="#" id="menu-logo">
+            <img src="img/logo_DJI.png" class="logo" />
+        </a>
+        <!-- 五个菜单项 -->
+        <div class="menu_item_1" id="menu_DRONES">
+            <a href="#" class="menu_item_text" id="DRONES">DRONES</a>
+            <div class="second_level_menu_1">
+                <div id="box1_1">
+                    <a href="#" class="main_title">Consumer</a>
+                    <a href="#" id="mavic_text" class="sub_title_1">Mavic</a>
+                    <a href="#" id="Dji_Goggles_text" class="sub_title_1" >Dji Goggles</a>
+                    <a href="#" id="Phantom_4_Pro_text" class="sub_title_1" >Phantom 4 Pro</a>
+                    <a href="#" id="phantom_4_advanced_text" class="sub_title_1" >phantom 4 advanced</a>
+                    <a href="#" id="phantom_4_text" class="sub_title_1" >phantom 4</a>
+                    <a href="#" id="phantom_3_Series_text" class="sub_title_1" >phantom 3 Series</a>
+                    <a href="#" id="Consumer_Drones_Comparison_text" class="sub_title_1" >Consumer Drones Comparison</a>
+                </div>
+                <div id="box2_1">
+                    <a href="#" class="main_title">Professional</a>
+                    <a href="#" id="Inspire_2_text" class="sub_title_1" >Inspire 2</a>
+                    <a href="#" id="Inspire_1_text" class="sub_title_1" >Inspire 1</a>
+                    <a href="#" id="Crystalsky_text" class="sub_title_1" >Crystalsky</a>
+                    <a href="#" id="Cendence_text" class="sub_title_1" >Cendence</a>
+                    <a href="#" id="Inspire_Comparison_text" class="sub_title_1" >Inspire Comparison</a>
+                </div>
+                <div class="box_img">
+                    <a href="#" class="sub_box_img">
+                        <img src="img/mavic.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/inspir2.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/phantom2 pro.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/inspire 2 accessories.jpg"/>
+                    </a>
+                    <div id="box_3_1">
+                        <img src="img/mavic2.png" id="mavic_img"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="menu_item_2" id="menu_IMAGING">
+            <a href="#" class="menu_item_text" id="IMAGING">IMAGING SOLUTIONS</a>
+            <div class="second_level_menu_2">
+                <div id="box1_2">
+                    <a href="#" id="Aerial_text" class="main_title">Aerial</a>
+                    <a href="#" id="X5S_text" class="sub_title_2" >X5S</a>
+                    <a href="#" id="X4S_text" class="sub_title_2" >X4S</a>
+                    <a href="#" id="X5R_text" class="sub_title_2" >X5R</a>
+                    <a href="#" id="X5_text" class="sub_title_2" >X5</a>
+                    <a href="#" id="Zenmuse_Camera_Comparison_text" class="sub_title_2" >Zenmuse Camera Comparison</a>
+                </div>
+                <div id="box2_2">
+                    <a href="#" id="Pro_text" class="main_title">Pro</a>
+                    <a href="#" id="Ronin_2_text" class="sub_title_2" >Ronin 2</a>
+                    <a href="#" id="Ronin_MX_text" class="sub_title_2" >Ronin-MX</a>
+                    <a href="#" id="Ronin_M_text" class="sub_title_2" >Ronin-M</a>
+                    <a href="#" id="Ronin_text" class="sub_title_2" >Ronin</a>
+                    <a href="#" id="DJI_Focus_text" class="sub_title_2" >DJI Focus</a>
+                    <a href="#" id="RONIN_COMPARISON_text" class="sub_title_2" >RONIN COMPARISON</a>
+                </div>
+                <div id="box3_2">
+                    <a href="#" id="HandHeld_text" class="main_title">HandHeld</a>
+                    <a href="#" id="Osmo_Mobile_text" class="sub_title_2" >Osmo Mobile</a>
+                    <a href="#" id="Osmo_+_text" class="sub_title_2" >Osmo +</a>
+                    <a href="#" id="Osmo_Pro_text" class="sub_title_2" >Osmo Pro / Raw</a>
+                    <a href="#" id="Osmo_text" class="sub_title_2" >Osmo</a>
+                    <a href="#" id="OSMO_ACCESSORIES_text" class="sub_title_2" >OSMO ACCESSORIES</a>
+                    <a href="#" id="Osmo_Comparison_text" class="sub_title_2" >Osmo Comparison</a>
+                </div>
+                <div class="box_img">
+                    <a href="#" class="sub_box_img">
+                        <img src="img/zenmuse x5s.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/osmo.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/ronin-mx.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/focus.jpg"/>
+                    </a>
+                    <div id="box_4_2">
+                        <img src="img/X5S.png" id="x5s_img"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_item_3" id="menu_ENTERPRISE">
+            <a href="#" class="menu_item_text" id="ENTERPRISE">ENTERPRISE</a>
+            <div class="second_level_menu_3">
+                <div id="box1_3">
+                    <a href="#" id="DJI_Enterprise_text" class="main_title">DJI Enterprise</a>
+                    <a href="#" id="DRONES_text" class="main_title" >DRONES</a>
+                    <a href="#" id="MATRICE_200_SERIES_text" class="sub_title_1" >MATRICE 200 SERIES</a>
+                    <a href="#" id="MATRICE_600_PRO_text" class="sub_title_1" >MATRICE 600 PRO</a>
+                    <a href="#" id="MATRICE_100_text" class="sub_title_1" >MATRICE 100</a>
+                    <a href="#" id="S1000_plus_text" class="sub_title_1" >S1000+</a>
+                    <a href="#" id="Solutions_text" class="main_title" >Solutions</a>
+                    <a href="#" id="AGRAS_MG_1_text" class="sub_title_1" >AGRAS MG-1</a>
+                    <a href="#" id="AGRAS_MG_1S_text" class="sub_title_1" >AGRAS MG-1S</a>
+                </div>
+                <div id="box2_3">
+                    <a href="#" id="Payloads_text" class="main_title">Payloads</a>
+                    <a href="#" id="ZENMUSE_XT_text" class="sub_title_1" >ZENMUSE XT</a>
+                    <a href="#" id="ZENMUSE_Z30_text" class="sub_title_1" >ZENMUSE Z30</a>
+                    <a href="#" id="SOFTWARE_text" class="main_title" >SOFTWARE</a>
+                    <a href="#" id="GS_PRO_text" class="sub_title_1" >GS PRO</a>
+                    <a href="#" id="Components_text" class="main_title" >Components</a>
+                    <a href="#" id="DJI_TRACKTENNA_text" class="sub_title_1" >DJI TRACKTENNA</a>
+                </div>
+                <div class="box_img">
+                    <a href="#" class="sub_box_img">
+                        <img src="img/agriculture.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/building.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/energy.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/public.jpg"/>
+                    </a>
+                    <div id="box_3_3">
+                        <img src="img/MATRICE 200 SERIES.png" id="MATRICE_200_SERIES_img"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_item_4" id="menu_COMMUNITY">
+            <a href="#" class="menu_item_text" id="COMMUNITY">COMMUNITY</a>
+            <div class="second_level_menu_4">
+                <a href="#" class="second_level_menu_4_text">SKIPIXEL</a>
+                <a href="#" class="second_level_menu_4_text">DJI FORUM</a>
+                <a href="#" class="second_level_menu_4_text">SHOWCASE</a>
+            </div>
+        </div>
+        <div class="menu_item_5" id="menu_SUPPORT">
+            <a href="#" class="menu_item_text" id="SUPPORT">SUPPORT</a>
+            <div class="second_level_menu_5">
+                <div id="box1_5">
+                    <a href="#" id="Product_Support_text" class="main_title">Product Support</a>
+                    <a href="#" id="MAVIC_text" class="sub_title_1">MAVIC</a>
+                    <a href="#" id="PHANTOM_text" class="sub_title_1" >PHANTOM</a>
+                    <a href="#" id="INSPIRE_text" class="sub_title_1" >INSPIRE</a>
+                    <a href="#" id="OSMO_text" class="sub_title_1" >OSMO</a>
+                    <a href="#" id="RONIN_text" class="sub_title_1" >RONIN</a>
+                    <a href="#" id="INDUSTRIAL_text" class="sub_title_1" >INDUSTRIAL</a>
+                </div>
+                <div id="box2_5">
+                    <a href="#" id="SERVICE_PLANS_text" class="main_title">SERVICE PLANS</a>
+                    <a href="#" id="DJI_CARE_REFRESH_text" class="sub_title_1">DJI CARE REFRESH</a>
+                    <a href="#" id="DJI_CARE_text" class="sub_title_1" >DJI CARE</a>
+                    <a href="#" id="OSMO_SHIELD_text" class="sub_title_1" >OSMO SHIELD</a>
+                    <a href="#" id="DJI_CIRCLE_text" class="sub_title_1" >DJI CIRCLE</a>
+                </div>
+                <div id="box3_5">
+                    <a href="#" id="REPAIR_SERVICES_text" class="main_title">REPAIR SERVICES</a>
+                    <a href="#" id="ONLINE_REPAIR_text" class="sub_title_1">ONLINE REPAIR</a>
+                    <a href="#" id="REPAIR_PROGRESS_text" class="sub_title_1" >REPAIR PROGRESS</a>
+                    <a href="#" id="ACCESSORY_PRICE_text" class="sub_title_1" >ACCESSORY PRICE</a>
+                    <a href="#" id="TERMS_text" class="main_title" >TERMS</a>
+                    <a href="#" id="HELP_PURCHASING_text" class="sub_title_1" >HELP PURCHASING</a>
+                    <a href="#" id="AFTER-SALES_POLICIES_text" class="sub_title_1" >AFTER-SALES POLICIES</a>
+                </div>
+
+                <div class="box_img">
+                    <a href="#" class="sub_box_img">
+                        <img src="img/product_support.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/repair_services.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/terms.jpg"/>
+                    </a>
+                    <a href="#" class="sub_box_img">
+                        <img src="img/service_plans.jpg"/>
+                    </a>
+                    <div id="box_4_5">
+                        <img src="img/mavic2.png" id="mavic_2_img"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 搜索按钮 -->
+        <a href="#" class="search_bt_box">
+            <img src="img/search.svg"  class="search_bt"/>
+        </a>
+    </div>
+    <!-- 购物车 -->
+    <a href="#" class="shop">
+        <div class="shop_in_box">
+            <span class="shop_text">STORE</span>
+            <img src="img/shop.svg" class="shop_logo" />
+        </div>
+
+    </a>
+    <!-- 语言 -->
+    <div href="#" class="lang">
+        <a href="#" class="lang_box">
+            <img src="img/lang.svg" class="logo_lang"/>
+            <span class="lang_text">
+						ENGLISH
+					</span>
+        </a>
+        <div class="second_level_menu_6">
+            <a href="#" class="second_level_menu_6_text">english</a>
+            <a href="#" class="second_level_menu_6_text">deutsch</a>
+            <a href="#" class="second_level_menu_6_text">简体中文</a>
+            <a href="#" class="second_level_menu_6_text">繁體中文</a>
+            <a href="#" class="second_level_menu_6_text">日本語</a>
+            <a href="#" class="second_level_menu_6_text">한국어</a>
+            <a href="#" class="second_level_menu_6_text">Françai</a>
+            <a href="#" class="second_level_menu_6_text">Español</a>
+            <a href="#" class="second_level_menu_6_text">русский</a>
+            <!--<div class="box">
+            </div>-->
+        </div>
+    </div>
+    <!-- 登陆 -->
+    <div class="login">
+        <a href="#" class="login_box">
+            <img src="img/user-icon.svg" class="user_icon"/>
+        </a>
+        <div class="second_level_menu_7">
+            <a href="#" class="second_level_menu_7_text">login</a>
+            <a href="#" class="second_level_menu_7_text">register</a>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+   <div class="banner-col">
+      <div class="text">
+         <div class="title">
+             <h1>
+                 <img src="dajiang/logo-en.png" alt="" style="height: 32px;">
+             </h1>
+             <p class="font-gotham">BEYOND  SMART</p>
+         </div>
+          <div class="video-slider">
+            <div class="video-container">
+               <ui class="roundabout-holder">
+                 <li class="roundabout-holder-li roundabout-moveable-item-center" style="">
+                     <a href="#" class="video-box">
+                         <img src="dajiang/banner-video-1.jpg" alt="">
+                     </a>
+                 </li>
+                   <li class="roundabout-holder-li roundabout-moveable-item-left" style="">
+                       <a href="#" class="video-box">
+                           <img src="dajiang/banner-video-2.jpg" alt="">
+                       </a>
+                   </li>
+                   <li class="roundabout-holder-li roundabout-moveable-item-right" style="">
+                       <a href="#" class="video-box">
+                           <img src="dajiang/banner-video-3.jpg" alt="">
+                       </a>
+                   </li>
+               </ui>
+                <div class="controls">
+                    <a id="prev" href="javascript:;" class="prev">
+                        <i class="icon-arrow-left"></i>
+                    </a>
+                    <a id="next" href="javascript:;" class="next">
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+          </div>
+      </div>
+   </div>
+</div>
+<!--顶部导航菜单栏-->
+<div id="container-sub-nav">
+    <div id="sub-nav">
+
+        <ul class="sub-nav-left">
+            <li id="sub-nav-title">
+                <a href=" ">灵眸OSMO手机云台</a >
+            </li>
+        </ul>
+
+        <ul class="sub-nav-right">
+            <li>
+                <a href="http://www.dji.com/cn/osmo-mobile/info#specs">技术参数</a >
+            </li>
+            <li>
+                <a href="http://www.dji.com/cn/osmo-mobile/info#video">视频</a >
+            </li>
+            <li>
+                <a href="http://www.dji.com/cn/osmo-mobile/info#downloads">下载</a >
+            </li>
+            <li>
+                <a href="http://www.dji.com/cn/osmo-mobile/info#faq">常见问题</a >
+            </li>
+            <li class="buy_now">
+                <a class="sub_buy_now" href="http://store.dji.com/cn/product/osmo-mobile?site=brandsite&from=buy_now_bar">立即购买</a >
+            </li>
+            <li>
+                <a id="toTop" onclick = "goTop()" href="#">回到顶部</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<!--相机产品展示-->
+<div id="container-camera-show">
+    <div class="camera-show-wrap">
+        <div class="camera-show-left">
+
+            <div class="camera-show-text">
+                <h2 class="common-title float-up-fast">手机拍大片</h2>
+                <p class="common-content float-up-slow">灵眸Osmo手机云台将手机变成一台智能增稳相机，用稳定、流畅的影像记录和分享生活中的难忘时刻。你可以随手拍出大片般动感的视频，还能通过丰富的智能功能进行自动跟随，捕捉延时视频，创造惊艳的影像效果，分享给朋友或直播给全世界。除经典的黑色以外，我们还提供全新的银色外观供选择，为你的创作增添色彩。</p>
+            </div>
+
+            <div class="camera-show-box float-up-slow">
+                <p class="sub_title common-content">随心所动</p>
+
+                <div class="img-item img-item1">
+                    <img class="img1 float-up-slow" src="http://www5.djicdn.com/assets/images/products/osmo-mobile/v2/s0-1-fa21321e774a56dfeac8cf2c51f26bb9.png"/>
+                    <span class="common-content content_center">标准模式</span>
+                </div>
+
+                <div class="img-item img-item2">
+                    <img class="img2 float-up-slow" src="http://www1.djicdn.com/assets/images/products/osmo-mobile/v2/s0-2-7cc4d190eecd83c0ff555a1175451a36.png"/>
+                    <span class="common-content content_center">竖拍模式</span>
+                </div>
+
+                <div class="img-item img-item3">
+                    <img class="img3 float-up-slow" src="http://www2.djicdn.com/assets/images/products/osmo-mobile/v2/s0-3-404b07a0befbde45aa935a87e7a350c1.png"/>
+                    <span class="common-content content_center">悬挂模式</span>
+                </div>
+
+                <div class="img-item img-item4">
+                    <img class="img4 float-up-slow" src="http://www3.djicdn.com/assets/images/products/osmo-mobile/v2/s0-4-30b995546059d7b8f364edf9ea7d6229.png"/>
+                    <span class="common-content content_center">手电筒模式</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="camera-show-right">
+            <div id="camera-show-pic">
+
+                <div class="osmo-btn-box black-btn-box" onclick="turnBlack()">
+                    <a class="osmo-black" href="javascript:;"></a>
+                    <span class="camera-color1">Black</span>
+                </div>
+
+                <div class="osmo-btn-box white-btn-box" onclick="turnWhite()">
+                    <a class="osmo-white" href="javascript:;"></a>
+                    <span class="camera-color2">Sliver</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--产品展示-->
+<div id="product-show">
+    <div class="product-show-bg">
+
+        <div class="switch-tab">
+
+            <ul>
+                <li class="product-detail1">
+                    <a class="product-content content-selected" href="javascript:;" onclick="changeShow(this)">智能跟随</a>
+                </li>
+                <li class="product-detail1">
+                    <a class="product-content" href="javascript:;" onclick="changeShow(this)">移动延时摄影</a>
+                </li>
+                <li class="product-detail1">
+                    <a class="product-content" href="javascript:;" onclick="changeShow(this)">慢动作视频</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="sub-container">
+
+            <div class="video-show" style="position: relative">
+                <!--<img class="video-pic" src="https://cn-videos.dji.net/video_trans/19f60b46b46d459a949b877172806eb1/1.jpg?auth_key=1495304179-0-0-60a639cae0e5fd825e9e11edf1da00ec"/>-->
+                <video class="video-pic" src="dajiang/dajiang_720.mp4" loop style="width:700px;;height: 400px;"></video>
+                <div class="tvp-overlay-play">
+                   <button id="video-play-btn" class="tvp-button"><span style="display: block;width: 60px;height: 60px;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 36 36"><path d="M11,10 L18,13.74 18,22.28 11,26 Z M18,13.74 L26,18 26,18 18,22.28 Z"></path></svg></span></button>
+                </div>
+            </div>
+
+            <div class="product-content" style="margin-top: 3px;height: 394px;">
+                <div class="product-describes">
+                    <h2 class="video-common-title">智能跟随</h2>
+                    <p class="video-common-content">灵眸Osmo手机云台不仅让你轻松拍摄，还能使你成为拍摄的主角。
+                        Osmo手机云台的智能跟随功能让手机镜头随你而动。只要在DJI GO app中选择自己，云台就能自动转动，
+                        控制手机进行跟随拍摄，将你时刻置于画面中央，记录自己的生活，从未如此简单。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="s1-container">
+    <div class="s1-text">
+        <h2 style="font-size: 28px;font-weight: normal">EFFORTLESSLY SMOOTH</h2>
+        <p>If you have ever walked around while shooting video with your smartphone, you will know how hard it is to keep your camera still. Osmo Mobile smooths and even cancels out the movements you make, stopping camera shake and turning every shot into cinematic video.</p>
+    </div>
+    <div class="s1-mobile-box">
+        <div class="img-box">
+            <img class="mobile-img" src="dajiang/s1-p1-border-b.png" alt="">
+            <div class="vedio-player">
+                <video src="dajiang/720.mp4" style="width: 400px;height: 225px;" autoplay="autoplay" loop="loop"></video>
+                <h4>Shot without Osmo Mobile</h4>
+            </div>
+        </div>
+        <div class="img-box">
+            <img class="mobile-img oso-mobile" src="dajiang/s1-p2-border.png" alt="">
+            <div class="vedio-player">
+                <video src="dajiang/720-2.mp4" style="width: 400px;height: 225px;margin-left: -72px;" autoplay="autoplay" loop="loop"></video>
+                <h4>Shot with Osmo Mobile</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="oso-mobile-s8">
+   <div class="oso-mobile-s8-container">
+      <ul class="oso-mobile-s8-ul" style="margin-bottom: 45px;">
+          <li class="oso-mobile-s8-ul-li-active"><a class="font-gotham" href="javascript:;" data-target="feature-control">Control</a></li>
+          <li><a class="font-gotham" href="javascript:;" data-target="feature-battery">Battery</a></li>
+          <li><a class="font-gotham" href="javascript:;" data-target="feature-design">Design</a></li>
+          <li><a class="font-gotham" href="javascript:;" data-target="feature-more">More</a></li>
+      </ul>
+       <div id="feature-control" class="feature-box feature-box-show" style="">
+           <ul class="clearfix">
+              <li>
+                  <p class="img-p" style="display: block"><img src="dajiang/i1.jpg" alt=""></p>
+                  <h3>Full Camera Control</h3>
+                  <p>
+                      Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                  </p>
+              </li>
+              <li>
+                  <p class="img-p" style="display: block"><img src="dajiang/i2-40.jpg" alt=""></p>
+                  <h3>CUSTOMIZABLE JOYSTICK</h3>
+                  <p>
+                      Make the Osmo Mobile Joystick work the way you want it to. Set sensitivity, invert pan or tilt, or even set it so that the gimbal can only move in specific directions. Use Push Mode to change the direction.
+                  </p>
+              </li>
+              <li>
+                  <p class="img-p" style="display: block"><img src="dajiang/i3-69.jpg" alt=""></p>
+                  <h3>Bluetooth Connectivity</h3>
+                  <p>
+                      Using an optimized Bluetooth connection, the Osmo Mobile is able to detect your smart device and sync up automatically and quickly if it has been paired before, so you can get shooting faster.
+                  </p>
+              </li>
+              <li>
+                  <p class="img-p" style="display: block"><img src="dajiang/s8-i4.jpg" alt=""></p>
+                  <h3>FiLMiC Pro Support</h3>
+                  <p>
+                      Created for professional filmmaking using mobile devices, the FiLMiC Pro app turns smartphones into broadcast capable high definition video cameras.
+                  </p>
+              </li>
+           </ul>
+       </div>
+       <div id="feature-battery" class="feature-box">
+           <ul class="clearfix">
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i4.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i4.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i4.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i4.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+           </ul>
+       </div>
+       <div id="feature-design" class="feature-box">
+           <ul class="clearfix">
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i6.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i6.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i6.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i6.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+           </ul>
+       </div>
+       <div id="feature-more" class="feature-box">
+           <ul class="clearfix">
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i1.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i1.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i1.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+               <li>
+                   <p class="img-p" style="display: block"><img src="dajiang/i1.jpg" alt=""></p>
+                   <h3>Full Camera Control</h3>
+                   <p>
+                       Control your phone camera like a professional camera, with dedicated buttons for the Shutter and Record, as well as manual ISO, Shutter and White Balance settings.
+                   </p>
+               </li>
+           </ul>
+       </div>
+   </div>
+</div>
+<div class="oso-mobile-s3">
+   <div class="oso-mobile-s3-container">
+       <ul class="oso-mobile-s3-ul">
+          <li class="">
+              <i class="icon1"></i><a class="oso-mobile-s3-ul-a active" href="javascript:;" data-target="0">Dramatic long exposures</a>
+              <div class="triangle"></div>
+              <div class="triangle-inner"></div>
+          </li>
+          <li class="">
+              <i class="icon2"></i><a class="oso-mobile-s3-ul-a" href="javascript:;" data-target="1">Bring out your beauty</a>
+              <div class="triangle" style="display: none"></div>
+              <div class="triangle-inner" style="display: none"></div>
+          </li>
+       </ul>
+       <div class="oso-mobile-s3-feature-box" style="display: block;">
+           <div class="oso-mobile-s3-text">
+                <p>Take 1-second long exposures without a tripod for sharp night shots. With 3-axis stabilization, the Osmo Mobile will keep your phone steady. Place the Osmo Mobile on its tripod and point it up at the sky to capture stunning star trails that are ready for instant sharing.</p>
+           </div>
+           <div class="oso-mobile-s3-ani">
+               <div class="oso-mobile-s3-ani-item">
+                 <div class="content">
+                     <img src="dajiang/s3-p1.jpg" alt="">
+                     <h4 class="">Shot without Osmo Mobile</h4>
+                 </div>
+               </div>
+               <div class="oso-mobile-s3-ani-item">
+                   <div class="content">
+                       <img src="dajiang/s3-p2.jpg" alt="">
+                       <h4 class="">Shot with Osmo Mobile</h4>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="oso-mobile-s3-feature-box">
+           <div class="oso-mobile-s3-text">
+               <p>Make your beauty shine with the Osmo Mobile’s beautify technology. Using automatic identification and intelligent processing technologies inside the DJI GO app</p>
+           </div>
+           <div class="oso-mobile-s3-ani">
+               <div class="oso-mobile-s3-ani-item">
+                   <div class="content">
+                       <img src="dajiang/s3-p3.jpg" alt="">
+                       <h4 class="">Shot without Osmo Mobile</h4>
+                   </div>
+               </div>
+               <div class="oso-mobile-s3-ani-item">
+                   <div class="content">
+                       <img src="dajiang/s3-p4.jpg" alt="">
+                       <h4 class="">Shot with Osmo Mobile</h4>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<div class="view1">
+    <p class="h1" style="margin-top: 180px;">LIVE STREAMING</p>
+    <p class="txt1" style="margin-top: 180px;">Share moments using YouTube Live and Facebook Live inside DJI GO.</br>Every stream you shoot will be steady and smooth,as if you have your </br>own personal camera crew.</p>
+    <p class="start" style="margin-top: 180px;">
+
+        Watch video
+    </p>
+</div>
+<div class="view2">
+    <p class="h2">DETAILED PANORAMAS</p>
+    <p class="txt2">Take big, detailed landscape photos you will want to frame using only your </br> smartphone and the Osmo Mobile.Its Panorama function automatically</br> captures and blends 9 separate photos together to create one stunning photo.</br>* Shot using an iPhone 6s Plus & Osmo Mobile by Emil in Ine-cho, Yosa-gun, Kyoto, Japan.</p>
+</div>
+<!-- 购买按钮 -->
+<div id="bt_buy">
+    <a href="#" id="bt_buy_text">
+        <p id="osmo">
+            buy osmo mobile
+        </p>
+        <p id="slogan">
+            Beyond Smart
+        </p>
+    </a>
+</div>
+<!-- 页面底部 -->
+<div id="bottom">
+    <div id="bottom_box">
+        <div id="bottom_box_1" class="bottom_box_same">
+            <a href="#" class="bottom_box_same_maintitle">ABOUT DJI</a>
+            <a href="#" class="bottom_box_same_subtitle">Who We Are</a>
+            <a href="#" class="bottom_box_same_subtitle">Events</a>
+            <a href="#" class="bottom_box_same_subtitle">Careers</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Global Citizenship</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Enterprise</a>
+            <a href="#" class="bottom_box_same_subtitle">Contact Us</a>
+
+        </div>
+        <div id="bottom_box_2" class="bottom_box_same">
+            <a href="#" class="bottom_box_same_maintitle">NEWSROOM</a>
+            <a href="#" class="bottom_box_same_subtitle">News</a>
+            <a href="#" class="bottom_box_same_subtitle">Media Coverage</a>
+            <a href="#" class="bottom_box_same_subtitle">Altitude</a>
+        </div>
+        <div id="bottom_box_3" class="bottom_box_same">
+            <a href="#" class="bottom_box_same_maintitle">WHERE TO BUY</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Online Store</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Store</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Store App</a>
+            <a href="#" class="bottom_box_same_subtitle">Find a Store</a>
+            <a href="#" class="bottom_box_same_subtitle">Become a Dealer</a>
+
+        </div>
+        <div id="bottom_box_4" class="bottom_box_same">
+            <span class="bottom_box_same_maintitle">COMMUNITY</span>
+            <a href="#" class="bottom_box_same_subtitle">SkyPixel</a>
+            <a href="#" class="bottom_box_same_subtitle">DJI Forum</a>
+            <a href="#" class="bottom_box_same_subtitle">Showcase</a>
+        </div>
+        <div id="bottom_box_5" class="bottom_box_same">
+            <span class="bottom_box_same_maintitle">EDUCATION</span>
+            <a href="#" class="bottom_box_same_subtitle">Fly Safe</a>
+            <a href="#" class="bottom_box_same_subtitle">Geo System</a>
+        </div>
+        <div id="bottom_box_6" class="bottom_box_same">
+            <a href="#" class="bottom_box_same_maintitle">DEVELOPER</a>
+            <a href="#" class="bottom_box_same_subtitle">Forum</a>
+            <a href="#" class="bottom_box_same_subtitle">Github</a>
+        </div>
+    </div>
+    <div id="bottom_footer">
+        <div id="bottom_footer_left">
+            <a href="#">
+                <img src="dajiang/DJI_POSSIBLE.png" id="bottom_footer_left_img"/>
+            </a>
+        </div>
+        <div id="bottom_footer_center">
+            <div class="bottom_footer_center_box">
+                <p class="bottom_footer_center_box_text">
+                    Feedback on web experience？
+                    <a href="#" class="bottom_footer_center_box_text_1">
+                        Click here
+                    </a>
+                </p>
+            </div>
+            <div class="bottom_footer_center_box">
+                <p class="bottom_footer_center_box_text">
+                    Copyright © 2017 DJI All Rights Reserved.
+                    <a href="#" class="bottom_footer_center_box_text_2">
+                        Privacy Policy
+                    </a>
+                    <a href="#" class="bottom_footer_center_box_text_2">
+                        Use of Cookies
+                    </a>
+                    <a href="#" class="bottom_footer_center_box_text_2">
+                        Terms of Use
+                    </a>
+                    <a href="#" class="bottom_footer_center_box_text_2">
+                        Site Map
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div id="bottom_footer_right">
+            <a href="#" id="bottom_footer_right_social_img">
+                <img src="dajiang/social_img.png"/>
+            </a>
+        </div>
+
+    </div>
+</div>
+</body>
+<!--<script src="js/jquery-2.1.4.min.js"></script>-->
+<script src="js/dajiang.js"></script>
+<script>
+
+</script>
+</html>

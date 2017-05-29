@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.view1{
+	background-image: url(../img/11.jpg);
+	height: 700px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.h1{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    padding-top: 80px;
+    color: white;
+    text-align:center;
+    font-size: 28px;
+}
+
+.view1 p{
+	position: absolute;
+    transform: translateY(180px);
+	transition: all 2s;
+	opacity: 1;
+}
+
+.view1:hover p{
+	transform: translateY(0);
+	opacity: 1;
+}
+.view1 .h1{
+	position: absolute;
+	transition-delay:  0.5s;
+	opacity: 0;
+}
+.view1 .txt1{
+	position: absolute;
+	opacity: 0;
+}
+.view1 .start{
+	position:absolute;
+	opacity: 0;
+}
+.txt1{
+	position: absolute;
+    width: 100%;
+	padding-top: 150px;
+	color: white;
+	text-align:center;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.view2 .h2{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    padding-top: 80px;
+    color: black;
+    text-align:center;
+    font-size: 28px; 
+}
+.view2 p{
+    position: absolute;
+	opacity: 1;
+	transform: translateY(180px);
+	transition: all 2s;
+}
+.view2:hover p{
+	transform: translateX(0);
+	opacity: 1;
+}
+.view2 .h2{
+	position: absolute;
+	opacity: 0;
+}
+.view2 .txt2{
+	position: absolute;
+	opacity: 0;
+	transition-delay:  0.5s;
+}
+.view2 .txt2{
+	position: absolute;
+    width: 100%;
+	padding-top: 150px;
+	color:black;
+	text-align:center;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+
+.start{
+	position: absolute;
+    width: 100%;
+    height: 30px;
+	padding-top: 250px;
+	color: white;
+	text-align:center;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+    float: left;
+}
+
+
+	
+.view2{
+	background-image: url(../img/22.jpg);
+	height: 600px;
+    padding-top: 170px;
+    background-position: center center;
+    background-size: cover;
+}
+.h2{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    padding-top: 155px;
+    color: white;
+    text-align:center;
+    font-size: 28px;
+}

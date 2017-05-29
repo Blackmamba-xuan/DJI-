@@ -1,0 +1,213 @@
+
+#bt_buy{
+	width: 100%;
+	height: 163px;
+	background: #44a8f2;	
+}
+
+#bt_buy #bt_buy_text{
+	width: 100%;
+	height: 63px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: block;
+	text-decoration: none;
+}
+
+#bt_buy #bt_buy_text #osmo{
+	font-size: 35px;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	font-family: Gotham, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+#bt_buy #bt_buy_text #slogan{
+	width: 100%;
+	height: 18px;
+	color: white;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 18px;
+	font-weight: 300;
+	font-family: Gotham, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+	
+}
+
+#bt_buy:hover{
+	background: white;
+}
+
+#bt_buy:hover #bt_buy_text #osmo{
+	color: #44a8f2;
+}
+
+#bt_buy:hover #bt_buy_text #slogan{
+	color: #44a8f2;
+}
+
+
+/* 底部 */
+#bottom{
+	width: 100%;
+	height: 282px;
+	padding-bottom: 30px;
+	background: #f7f8f9;
+}
+
+#bottom #bottom_box{
+	width: 1200px;
+	height: 191px;
+	margin: 0 auto;
+	/*padding-left: 15px;
+	padding-right: 15px;*/
+	background: #f7f8f9;
+}
+
+#bottom #bottom_box .bottom_box_same{
+	width: 170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 30px;
+	float: left;
+}
+
+#bottom #bottom_box #bottom_box_1{
+	height: 160px;
+	/*background: red;*/
+}
+
+#bottom #bottom_box #bottom_box_2{
+	height: 98px;
+	/*background: cadetblue;*/
+}
+
+#bottom #bottom_box #bottom_box_3{
+	height: 140px;
+	/*background: blueviolet;*/
+}
+
+#bottom #bottom_box #bottom_box_4{
+	height: 98px;
+	/*background: darkcyan;*/
+}
+
+#bottom #bottom_box #bottom_box_5{
+	height: 77px;
+	/*background: darkgrey;*/
+}
+
+#bottom #bottom_box #bottom_box_6{
+	height: 77px;
+	/*background: darkorange;*/
+}
+
+#bottom #bottom_box .bottom_box_same_maintitle{
+	width: 170px;
+	height: 17px;
+	margin-bottom: 18px;
+	color: #505050;
+	font-size: 12px;
+	line-height: 17px;
+	font-family: "Open Sans", "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+	/*background: red;*/
+}
+
+#bottom #bottom_box .bottom_box_same_subtitle{
+	width: 170px;
+	height: 21px;
+	color: #a6acaa;
+	font-size: 12px;
+	line-height: 21px;
+	font-family: "Open Sans", "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+	/*background: red;*/
+}
+
+#bottom #bottom_box a:hover{
+	color:#44A8F2;
+}
+
+#bottom #bottom_box span:hover{
+	color:#A6ACAA;
+}
+
+#bottom #bottom_footer{
+	width: 1200px;
+	height: 51px;
+	margin: 40px auto;
+	/*background: red;*/
+}
+
+#bottom #bottom_footer #bottom_footer_left{
+	width: 270px;
+	height: 27px;
+	padding-left: 15px;
+	padding-right: 15px;
+	/*background: blue;*/
+	float: left;
+}
+
+#bottom #bottom_footer #bottom_footer_center{
+	width: 570px;
+	height: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	/*background: coral;*/
+	float: left;
+}
+
+#bottom #bottom_footer #bottom_footer_right{
+	width: 285px;
+	height: 25px;
+	padding-right: 15px;
+	/*background: chocolate;*/
+	float: left;
+}
+#bottom #bottom_footer #bottom_footer_left #bottom_footer_left_img{
+	width: 183px;
+	height: auto;
+}
+
+#bottom #bottom_footer #bottom_footer_center .bottom_footer_center_box{
+	width: 570px;
+	height: 25px;
+	/*background: chocolate;*/
+}
+
+#bottom #bottom_footer #bottom_footer_center .bottom_footer_center_box_text{
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	/*display: inline-block;*/
+	color: #a6acaa;
+	font-family: "Open Sans", "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+	/*margin-left: 5px;*/
+}
+
+#bottom #bottom_footer #bottom_footer_center .bottom_footer_center_box .bottom_footer_center_box_text .bottom_footer_center_box_text_1{
+	display: inline-block;
+	color: #44A8F2;
+}
+
+#bottom #bottom_footer #bottom_footer_center .bottom_footer_center_box .bottom_footer_center_box_text .bottom_footer_center_box_text_2{
+	display: inline-block;
+	color: #a6acaa;
+}
+
+#bottom #bottom_footer #bottom_footer_center .bottom_footer_center_box .bottom_footer_center_box_text .bottom_footer_center_box_text_2:hover{
+	color: #44A8F2;
+}
+
+#bottom #bottom_footer_right #bottom_footer_right_social_img{
+	float: right;
+	display: block;
+	margin-top: 3.5px;
+}

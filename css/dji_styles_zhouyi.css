@@ -1,0 +1,372 @@
+/*菜单栏设置*/
+#container-sub-nav{
+   width:100%;
+   height:60px;
+   background-color: rgba(255, 255, 255, 0.92);
+   position: relative;
+   z-index: 999;
+}
+
+#sub-nav{
+   width:1170px;
+   height:60px;
+   margin:0 auto;
+   padding:0px 15px;
+
+}
+
+#sub-nav li{
+   display: inline;
+   float:left;
+}
+
+.sub-nav-left{
+   line-height:60px;
+   font-family: 微软雅黑;
+   float:left;
+}
+
+.sub-nav-left a{
+   font-size: 16px;
+   color: #707473;
+   text-decoration: none;
+}
+
+.sub-nav-right{
+   line-height: 60px;
+   float: right;
+}
+
+
+.sub-nav-right a{
+   font-size: 11px;
+   color: #a6acaa;
+   text-decoration: none;
+   display: inline-block;
+   padding:0px 10px;
+}
+
+#sub-nav .buy_now{
+   padding-left:10px;
+   padding-right:26px;
+}
+
+#sub-nav .sub_buy_now{
+   width:142px;
+   color:#fff;
+   background: #44a8f2;
+   text-align: center;
+   transition:all 0.8s;
+}
+
+ #sub-nav .sub_buy_now:hover{
+   color: #44a8f2;
+   background: #fff;
+}
+
+#sub-nav #toTop{
+   visibility:hidden;
+}
+
+/*相机产品展示*/
+#container-camera-show{
+   width:100%;
+   height:624px;
+   background-color: #f7f8f9;
+}
+
+#container-camera-show:hover .float-up-slow{
+   animation: floatUp 2s;
+}
+
+@keyframes floatUp{
+   0%{
+      opacity: 0;
+      transform: translateY(100px);
+   }
+   100%{
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+
+#container-camera-show:hover .float-up-fast{
+   animation: floatUp 1.5s;
+}
+
+#container-camera-show .camera-show-wrap{
+   width:1200px;
+   height:624px;
+   margin:0 auto;
+}
+#container-camera-show .camera-show-left{
+   width:570px;
+   height:624px;
+   padding:0 15px;
+   float: left;
+}
+
+#container-camera-show .camera-show-text{
+   width:570px;
+   height:184px;
+   color: #707473;
+   padding-top:100px;
+}
+
+#container-camera-show .common-title{
+   margin-bottom: 38px;
+   color: #707473;
+   font-weight:300;
+}
+
+#container-camera-show .common-content{
+   margin-bottom: 38px;
+   color: #707473;
+   font-weight:300;
+}
+
+#container-camera-show .camera-show-box{
+   width:570px;
+   height:245px;
+   padding-bottom:80px;
+}
+
+#container-camera-show .sub_title{
+   width:570px;
+   padding-top:21px;
+   margin-bottom: 0px !important;
+}
+
+#container-camera-show .camera-show-box img{
+   position:relative;
+}
+
+#container-camera-show .img-item{
+   width: 285px;
+   line-height: 100px;
+   position: relative;
+}
+
+#container-camera-show .img-item *{
+   vertical-align: middle;
+}
+
+#container-camera-show .img1{
+   width: 74px;
+   height: 100px;
+   top: 30px;
+}
+
+#container-camera-show .img2{
+   top:15px;
+   width: 111px;
+   height: 86px;
+}
+
+#container-camera-show .img3{
+   width: 71px;
+   height: 91px;
+}
+
+#container-camera-show .img4{
+   top:25px;
+   width:117px;
+   height:68px;
+}
+
+#container-camera-show .img-item1{
+   float:left;
+   height:104px;
+   line-height: 104px;
+}
+
+#container-camera-show .img-item2{
+   float:right;
+   height:104px;
+}
+
+#container-camera-show .img-item3{
+   float:left;
+   left:7px;
+   height: 104px;
+}
+
+#container-camera-show .img-item4{
+   float:right;
+   height:104px;
+   left:-30px;
+   right:30px;
+}
+
+#container-camera-show .camera-show-right{
+    width: 450px;
+    height: 537px;
+    float: right;
+	padding-top: 75px;
+}
+
+#container-camera-show #camera-show-pic{
+	width:450px;
+	height:549px;
+	background:url("http://www1.djicdn.com/assets/images/products/osmo-mobile/v2/s0-bg-black2-f4e828521f446cef7a91743614f7e7c3.png") no-repeat bottom;
+	background-size:450px 549px;
+}
+
+#container-camera-show .camera-show-right .osmo-btn-box{
+	width:56px;
+	height:50px;
+	display:inline-block;
+	text-align:center;
+	color: #44a8f2;
+}
+
+#container-camera-show .black-btn-box{
+	position:relative;
+	top:270px;
+	left:-25px;
+	right:419px;
+	bottom:228px;
+}
+
+#container-camera-show .white-btn-box{
+	position:relative;
+	top:270px;
+	left:0px;
+	right:344px;
+	bottom:228px;
+}
+
+#container-camera-show .camera-show-right .osmo-black{
+	display:inline-block;
+	width:26px;
+	height:26px;
+	background-image: url(http://www-optimized.djicdn.com/assets/images/products/osmo-mobile/v2/s0-btn-black-active-86da43f2e15593a5328ec0a42e1e3f3a.png);
+   background-size: cover;
+}
+
+#container-camera-show .camera-show-right .osmo-white{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   margin: 3px 0;
+   background-image: url(http://www-optimized.djicdn.com/assets/images/products/osmo-mobile/v2/s0-btn-silver-9ea5f0d67f8105b9b3d6746f9527df4b.png);
+   background-size: cover;
+   background-position: top;
+}
+
+#container-camera-show .camera-show-right .camera-color1{
+   opacity: 1;
+}
+
+#container-camera-show .camera-show-right .camera-color2{
+   opacity: 0;
+}
+/*
+#container-camera-show .camera-show-right .osmo-black{
+	background:black;
+}
+
+#container-camera-show .camera-show-right .osmo-white{
+	background:#707473;
+}
+
+*/	
+
+
+/*产品展示*/
+#product-show .switch-tab{
+	width:1200px;
+	height:49px;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	/*background:blue;*/
+	list-style-type: none;
+}
+
+#product-show .switch-tab li{
+	width:33.33%;
+	height: 49px;
+	line-height: 49px;
+	/*background: black;*/
+	float: left;
+	text-align: center;
+	list-style-type: none;
+}
+
+#product-show .switch-tab a{
+	display: inline-block;
+	height: 100%;
+	font-size: 20px;
+	font-family: 微软雅黑;
+	position: relative;
+	bottom: 2px;
+	text-decoration: none;
+	color: white;
+}
+
+#product-show .switch-tab .content-selected{
+	color: #44a8f2;
+	border-bottom: 2px solid #44a8f2;
+}
+
+#product-show .sub-container{
+	width: 1200px;
+	height: 506px;
+	/*background: orange;*/
+	margin: 0 auto;
+}
+
+#product-show .sub-container .video-show{
+	width: 700px;
+	height: 400px;
+	float: left;
+}
+
+#product-show .sub-container .video-pic{
+	width: 700px;
+	height: 400px;
+}
+
+#product-show .sub-container .product-content{
+	width: 400px;
+	height: 400px;
+	padding: 0px 50px;
+	/*background: red;*/
+	float: right;
+	background-color: #7a97b1;
+}
+
+#product-show .sub-container .product-describes{
+	width: 400px;
+	height: 400px;
+	font-size: 14px;
+	/*background: white;*/
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#product-show .video-common-title{
+   margin-bottom: 38px;
+   color: #fff;
+   font-size: 24px;
+   font-family: 微软雅黑;
+}
+
+#product-show .video-common-content{
+   margin-bottom: 15px;
+   font-size: 16px;
+   color: #fff;
+   font-family: 微软雅黑;
+}
+
+#product-show .product-show-bg{
+	background-image: url("http://www5.djicdn.com/assets/images/products/osmo-mobile/v2/s2-tab1-bg-acb78213986348546e5fbe79253b80bc.jpg");
+	background-size: 1230px 640px;
+}
+
+
+
+
+
+
